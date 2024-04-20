@@ -1,0 +1,6 @@
+[submodule "alex_pwospf"]
+	path = alex_pwospf
+	url = https://github.com/NukeWolf/PWOSPF-Router
+[submodule "michael_PWOPSF"]
+	path = michael_PWOPSF
+	url = https://github.com/tumichael83/maclearning.p4app
