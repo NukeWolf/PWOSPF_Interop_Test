@@ -1,6 +1,7 @@
 import sys
 import os
-if os.getlogin() == whyalex:
+import time
+if os.getlogin() == "whyalex":
     sys.path.append("/home/whyalex/p4app/docker/scripts")
 
 from p4app import P4Mininet
@@ -71,6 +72,8 @@ for n in range(1,3):
 h1, h2 = net1.get("n1_s1_h2"), net2.get("n2_s1_h2")
 h1 = net1.get("n1_s1_h2")
 
+time.sleep(30)
+print(h1.cmd("ping -c3 10.2.5.2"))
 
 
 
