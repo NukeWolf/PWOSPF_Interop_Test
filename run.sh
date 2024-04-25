@@ -6,6 +6,7 @@ mkdir /tmp/p4app-logs
 
 # Clear IP LINKS
 ip link | grep -P 'n\d_s\d+-eth\d+' -o | while read line ; do sudo ip link delete $line ; done
+ip link | grep -P 's\d+-eth\d+' -o | while read line ; do sudo ip link delete $line ; done
 
 
 CURRENT=$(pwd)
